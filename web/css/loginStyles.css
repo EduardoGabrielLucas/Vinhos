@@ -1,0 +1,163 @@
+/* estilização geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;
+    border: none;
+}
+
+
+body {
+    background-image: url('../img/fundo.jpg'); /*busca a imagem na pasta (obs: os dois pontos serve para voltar uma pasta*/
+    background-size: cover; /*vai tentar ocupar a imagem inteira na tela*/
+    background-position-y: -100px; /*a imagem sobe e aparece mais a cidade*/
+}
+
+
+textarea:focus, input:focus {   /*não aparece a borda azul ao redor do input quando selecionado*/
+    outline: none;
+}
+
+
+a, label {
+    font-size: .8rem; /*16px * 8 = x (tamanho da fonte fica compatível com a mídea que estiver usando) usa o do html.*/
+}
+
+a:hover { /*muda o modo quando passa o mouse en cima do link na página*/
+    color: #08558B;
+    /*color: #736BAC*/
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+
+/* container login */
+
+#login-container {
+    background-color: #fff;  
+    width: 400px;
+    margin-left: auto;  /*centralizar o container na tela*/
+    margin-right: auto; /*centralizar o container na tela*/
+    padding: 20px 30px; /*20 x em cima e baixo e 30 nas laterais*/
+    margin-top: 5vh;   /*medida proporcianal a tela do usuário ViewHight(altura da tela)*/
+    border-radius: 10px;    /*deixa as bordas do container arredondadas*/
+    text-align: center;
+}
+
+
+
+/* fomrulário */
+
+form {
+    margin-top: 30px;   /*deixa um espaço entre o titulo e o texto e entre as redes sociais*/
+    margin-bottom: 40px;
+}
+
+
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-bottom: 3px solid #08558B;   /*quando selecionado o input a borda muda de cor para azul*/
+}
+
+#forgot-password{
+    text-align: center;
+    display: block;
+}
+
+input[type="submit"]{   /*arrumando o botão de login*/
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;    /*deixa a borda do botão arredondada*/
+    margin-top: 30px;
+    color: #fff;
+    background-color: #08558B;
+    cursor: pointer;    /*aparece a mãozinha quando passa o mouse em cima*/
+}
+
+input[type="submit"]:hover {   /*arrumando o botão de login*/
+    background-color: #1B223C;  /*quando o mouse passa em cima a cor fica mais escura*/
+    transition: .5s;
+}
+
+
+
+/* redes sociais */
+
+#social-container, #social-container p {
+    margin-bottom: 20px;
+}
+
+#social-container i {
+    height: 40px;
+    width: 40px;
+    /* background-color: red; */
+    border-radius: 50%; /* deixa arredondado*/
+    line-height: 40px;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.fa-facebook-f {
+    background-color: #3b5998;  /*coloca a cor no icone do facebook*/
+}
+
+.fa-linkedin {
+    background-color: #0077b5;
+}
+
+
+
+/* container de registra */
+
+#register-container p {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/*Pretto*/
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+#msgErroLogin {
+    color: #ff0000;
+}

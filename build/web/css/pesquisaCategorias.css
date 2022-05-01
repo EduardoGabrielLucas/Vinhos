@@ -1,0 +1,131 @@
+/* geral */
+
+* {
+    margin: 0;  /*tira a margem*/
+    padding: 0;
+    box-sizing: border-box; /*para fazer a margem da borda dos inputs*/
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;   /*tira todas as bordas*/
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+
+input:focus, label:focus {
+    outline: none;
+}
+
+a {
+    color: #08558B;
+}
+
+body {
+    /*padding-top: 5vh;*/
+    background-image: url('../img/bg-register-page.jpg');
+    background-size: cover;
+    background-position-y: -150px;
+}
+
+
+/* FORM */
+
+#main-container {   /* criando um container central para o formulário */
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;  /* espaçamento interno */
+    margin-top: 5vh;  /* medida proporcianal a tela do usuário ViewHight(altura da tela) */
+}
+
+#main-container h1 {
+    text-align: center; /* Centraliza o título do container */
+    margin-bottom: 25px;    /* Afasta 25px o título do formulário */
+    margin-top: 30px;
+    font-size: 1.6rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.text-center{
+    text-align: center;
+  }
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+input:focus {
+    border-color: #08558B;
+}
+
+input[type="submit"] {  /* botão de registro */
+    background-color: #08558B;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {   /*arrumando o botão de login*/
+    background-color: #1B223C;  /*quando o mouse passa em cima a cor fica mais escura*/
+    transition: .5s;
+}
+
+#agreement {
+    margin-right: 5px;
+}
+
+#agreement, #agreement-label {  /* coloca o checkbox na mesma linha que a label */
+    display: inline-block;
+    width: auto;
+}
+
+
+
+/* validações */
+
+.error-validation {
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template {
+    display: none;
+}
